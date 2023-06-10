@@ -1,0 +1,107 @@
+div{
+    display: flex;
+    align-items: center;
+    height: fit-content;
+ }
+.date .slash{
+    background-color: #fff;
+ }
+.time .colon ,.timer .colon{
+    background-color: #fff;
+    height: 100%;
+    animation-name: blinc ;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+@keyframes blinc {
+    from{
+        opacity: 0;
+    }
+    45%{
+        opacity: 1;
+    }
+
+
+}
+.time img{
+    background-color: rgb(136, 255, 0);
+    max-width: 100%;
+}
+ img{
+    
+    max-width: 80%;
+}
+.date img{
+    background-color: rgb(217, 255, 0);
+}
+.timer img{
+    background-color: rgb(255, 0, 0);
+
+}
+
+.lap{
+    justify-content: center;
+    color: blueviolet;
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 1rem;
+    padding: 1rem;
+    border :blue solid 0.4rem;
+    color: black;
+    animation: coming 0.5s 1 ease-in;
+    border-radius: 20px;
+}
+@keyframes coming {
+    from{
+        margin-left: 1000px;
+    }
+    to{
+        margin: auto;
+    }
+}
+/* img{
+    height: fit-content;
+} */
+.time,.timer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr ;
+}
+
+.date{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr ;
+}
+.actions{
+    display: grid;
+    grid-template-rows: 1fr  1fr 1fr;
+    grid-template-columns: 1fr  1fr 1fr ;
+    padding: 5rem;
+    font-size: 2rem;
+    margin: 3rem;
+}
+label ,button{
+    margin: auto;
+    color: rgb(31, 42, 196);
+    font-style: italic ;
+    font-weight: bolder;
+    text-decoration: underline;
+    font-size: 1.5rem;
+}
+button{
+    padding: 1rem;
+    font-size: 1.5rem;
+    border:rgb(31, 42, 196) 0.3rem dotted ;
+    
+}
+button :hover{
+    font-size: 1.5rem;
+    border-radius:10px ;
+    background-color: rgb(167, 167, 248);
+    
+}
+
+button a{
+    text-decoration: none;
+}
+

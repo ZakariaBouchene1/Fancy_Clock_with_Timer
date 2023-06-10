@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TIMER</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="time">
+        <img  alt="h1" id="h1">
+        <img  alt="h2" id="h2">
+        <img src="./assets/colon.svg" class="colon"></img>
+        <img  alt="m1" id="m1">
+        <img  alt="m2" id="m2">
+        <img src="./assets/colon.svg" class="colon"></img>
+        <img  alt="s1" id="s1">
+        <img  alt="s2" id="s2">
+    </div>
+
+    <br>
+    <div class="date">
+        <img  alt="d1" id="d1">
+        <img   alt="d2" id="d2">
+        <img src="./assets/slash.svg" class="slash"></img>
+        <img   alt="M1" id="M1">
+        <img   alt="M2" id="M2">
+        <img src="./assets/slash.svg" class="slash"></img>
+        <img   alt="y1" id="y1">
+        <img  alt="y2" id="y2">
+        <img   alt="y3" id="y3">
+        <img   alt="y4" id="y4">
+    </div>
+    <div class="actions">
+        <label for="timer">Set Timer</label>
+        <br>
+        <input type="time" name="" id="timer">
+        <button  onclick="start()">START </button>
+        <br>
+        <button onclick="lap()">LAP </button>
+        <br>
+        <button onclick="stop()">STOP </button>
+    </div>
+    
+    <div class="timer">
+        <img  alt="th1" id="th1">
+        <img  alt="th2" id="th2">
+        <img src="./assets/colon.svg" class="colon"></img>
+        <img  alt="tm1" id="tm1">
+        <img  alt="tm2" id="tm2">
+        <img src="./assets/colon.svg" class="colon"></img>
+        <img  alt="ts1" id="ts1">
+        <img  alt="ts2" id="ts2">
+    </div> 
+    <div class="lapContainer"></div>
+<!--   src="./assets/c0.svg"   -->
+
+    <script src="script.js"></script>
+</body>
+</html>
